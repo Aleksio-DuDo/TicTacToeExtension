@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "TicTacToe",
+    "version": "1.0",
+    "description": "This insane game is now available in this extension! Enjoy!",
+    "icons": {
+        "128": "x.png"
+    },
+     "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/p5@1.1.4/lib/p5.min.js; object-src 'self'",
+     "background":[
+        {
+            "js": ["minimax.js"]
+        }
+
+     ],
+    "browser_action": {
+        "default_icon": "x.png",
+      "default_popup": "index.html",
+      "default_title": "TicTacToe"
+    }
+  }
